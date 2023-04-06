@@ -1,5 +1,7 @@
 # NSBT Docker Image Having All The Basic Tools Needed To Start A Compiler Projects.
 
+## Pulling The Image From Docker Hub without Building it
+* [https://hub.docker.com/r/nsbt/nbit]
 
 ## Building from scratch with random generated name
 
@@ -58,3 +60,5 @@ $ docker rmi -f $(docker images -a -q)
 * Windows users should install Docker with WSL
 * A Video Tutorial Guide  to help you setup [https://www.youtube.com/watch?v=2ezNqqaSjq8]
 
+### if some how building it and fail to give a name RUN docker tag container ID Name:TagName
+* docker tag f65b41c67bfd nsbt:cs
